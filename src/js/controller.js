@@ -116,7 +116,10 @@ const controlUploadRecipe = async recipeData => {
   }, MODAL_CLOSE_SEC * 1000);
 };
 
+const welcome = () => console.log('Welcome!');
+
 const init = () => {
+  welcome();
   bookmarksView.addHandlerRender(controlBookmarkList); //subscribe to event handler
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerServingsChange(controlServings);
